@@ -13,26 +13,14 @@ function App() {
     <PokemonsProvider>
       <div className="pokedex-app">
         <Heading />
-
         <Navigation />
 
         <Routes>
           <Route path="/" element={<Navigate replace to={generations[0].link} />}>
-          {/* <Route exact path="/" element={<Navigate replace to={generations[0].link} />}> */}
-            {/* <Route exact path="/" > */}
-            {/* <Redirect to={ generations[ 0 ].link } /> */}
-            {/* <Navigate replace to={ generations[ 0 ].link } /> */}
-
           </Route>
           {
             generations.map(({ id, link }) => (
-              <Route key={id}  path={'/' + link} element={ <PokedexView generation={id} />}>
-                
-              {/* <Route key={id} exact path={'/' + link} element={<PokedexView generation={id} />}> */}
-
-            
-
-
+              <Route key={id} path={'/' + link} element={<PokedexView generation={id} />}>
               </Route>
             ))
           }

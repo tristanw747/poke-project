@@ -12,7 +12,7 @@ function Navigation() {
 				{
 					generations.map( ( { id, link, text } ) => (
 						// <CustomNavLink exact key={ id } to={ link }>
-						<CustomNavLink  key={ id } to={ link }>
+						<CustomNavLink key={ id } to={ link } end>
 							{ text }
 						</CustomNavLink>
 					) )

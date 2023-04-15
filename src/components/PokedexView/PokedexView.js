@@ -8,7 +8,6 @@ import './PokedexView.css';
 function PokedexView( { generation } ) {
 	const { pokemons, setPokemons, setCurrentPokemonId } = usePokemons();
 	const { data, isLoading } = useGeneration( generation );
-console.log("POKEEEEEEEEEEEEEE")
 	useEffect( () => {
 		setPokemons( data );
 	}, [ data ] );
