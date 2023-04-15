@@ -5,7 +5,7 @@ export const PokemonsContext = createContext();
 export default function PokemonsProvider( { children } ) {
 	const [ pokemons, setPokemons ] = useState( [] );
 	const [ currentPokemonId, setCurrentPokemonId ] = useState( -1 );
-
+// console.log('testttt22')
 	const currentPokemon = pokemons[ currentPokemonId ];
 
 	return (

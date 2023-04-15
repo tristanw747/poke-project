@@ -4,9 +4,11 @@ import { Loader } from '../Loader';
 import { usePokemons } from '../../context/PokemonsProvider';
 import { useGeneration } from '../../hooks';
 import './PokedexView.css';
+ 
 
 function PokedexView( { generation } ) {
 	const { pokemons, setPokemons, setCurrentPokemonId } = usePokemons();
+  // console.log("testtt111")
 	const { data, isLoading } = useGeneration( generation );
 	useEffect( () => {
 		setPokemons( data );
