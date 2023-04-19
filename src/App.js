@@ -3,14 +3,10 @@ import { PokedexView } from './components/PokedexView';
 import { DetailsView } from './components/DetailsView';
 import { Navigation } from './components/Navigation';
 import { Heading } from './components/Heading';
-import { SearchBar } from './components/TwSearch';
 import { withRouter } from './HOCs';
 import PokemonsProvider from './context/PokemonsProvider';
 import generations from './data/generations';
 import './App.css';
-
-
-
 
 function App() {
   return (
@@ -18,7 +14,7 @@ function App() {
       <div className="pokedex-app">
         <Heading />
         <Navigation />
-        <SearchBar />
+      
         <Routes>
           <Route path="/" element={<Navigate replace to={generations[0].link} />}>
           </Route>
