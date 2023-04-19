@@ -14,17 +14,6 @@
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1"
   },
-  "devDependencies": {
-    "@types/react": "^17.0.38",
-    "eslint": "^7.11.0",
-    "eslint-plugin-react": "^7.28.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
